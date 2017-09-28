@@ -1,0 +1,27 @@
+\documentclass[oneside,a4paper,12pt]{report}
+\usepackage{fontspec}
+\usepackage[english]{babel}
+\usepackage{csquotes}
+\usepackage[nottoc]{tocbibind}
+\usepackage{setspace}
+\usepackage{wrapfig}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\graphicspath{ {pics/} }
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{url}
+\usepackage[
+backend=biber,
+style=alphabetic,
+sorting=ynt
+]{biblatex}
+\addbibresource{mybib.bib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%MAIN BODY AND TITLE PAGE%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\include{title}
+\tableofcontents
+\include{text}
+\end{document}
